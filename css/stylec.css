@@ -1,0 +1,616 @@
+@font-face {
+  font-family: "MarissaPaternoster";
+  src: url("../fonts/marissa-paternoster.woff") format("woff"),
+    url("../fonts/marissa-paternoster.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica-neue-light";
+  src: url("../fonts/helvetica-neue-light.ttf") format("ttf");
+}
+
+body,
+html {
+  -ms-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  z-index: 10;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+}
+
+ul {
+  width: 100%;
+  height: 60%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  display: inline-block;
+}
+
+#shows {
+  padding-top: 55px;
+  margin-top: -55px;
+}
+
+#media {
+  padding-top: 55px;
+  margin-top: -55px;
+}
+
+#contact {
+  padding-top: 55px;
+  margin-top: -55px;
+}
+
+main {
+  padding: 0 0 20px 0;
+  position: relative;
+  top: 65px;
+  font-family: helveticaneue-light, helvetica-neue-light, sans-serif;
+  letter-spacing: 0.3px;
+}
+
+h1 {
+  font-family: MarissaPaternoster;
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: normal;
+  margin: 10px 0 0 0;
+}
+
+h2 {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+
+a.headlink {
+  color: white;
+  font-family: courier, sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.head {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+.latestcontainer {
+  width: 60%;
+}
+
+.latest {
+  width: 100%;
+  border: 2px solid black;
+}
+
+.latesttext {
+  line-height: 1.5;
+  text-align: left;
+}
+
+.shows {
+  display: grid;
+  border-top: 1px solid gray;
+}
+
+.last {
+  border-bottom: 1px solid gray;
+}
+
+.date {
+  grid-area: 1 / 1 / span 1 / span 1;
+  font-weight: bold;
+}
+
+.venue {
+  grid-area: 2 / 1 / span 1 / span 1;
+}
+
+.note {
+  color: #818181;
+}
+
+a.ticket:link,
+a.ticket:visited {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: 2px solid black;
+  text-align: center;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+a.ticket:hover,
+a.ticket:active {
+  background-color: black;
+  color: white;
+}
+
+.audiocontainer {
+  width: 130px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.audio {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 5px;
+  margin: 0 0 0 0;
+}
+
+.contact {
+  display: grid;
+}
+
+.contactbox {
+  margin: 0;
+}
+
+.contacttype {
+  border-top: 1px solid gray;
+  padding: 5px 0 0 0;
+  margin: 0;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+iframe {
+  margin: 5px auto;
+}
+
+/* screen width from 0 to 359 */
+@media screen and (max-width: 359px) {
+  body {
+    position: relative;
+    width: 90%;
+  }
+
+  a.headlink {
+    font-size: 17px;
+    margin: 0 7px;
+    width: 60px;
+  }
+
+  .head {
+    margin: 0 4.5%;
+  }
+
+  main {
+    text-align: center;
+  }
+
+  .latestcontainer {
+    margin: 0 auto;
+  }
+
+  .audiocontainer {
+    margin: 10px auto;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .shows {
+    height: 200px;
+    padding: 5px 0 0 0;
+    margin: 0 0 10px 0;
+  }
+
+  .city {
+    grid-area: 3 / 1 / span 1 / span 1;
+  }
+
+  .note {
+    grid-area: 4 / 1 / span 1 / span 1;
+  }
+
+  .ticketbutton {
+    grid-area: 5 / 1 / span 1 / span 1;
+  }
+
+  a.ticket:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .contact {
+    grid-row-gap: 7px;
+  }
+
+  iframe {
+    width: 281px;
+    height: 158px;
+  }
+}
+
+/* screen width from 360 to 399 */
+@media screen and (min-width: 360px) and (max-width: 399px) {
+  body {
+    position: relative;
+    width: 90%;
+  }
+
+  a.headlink {
+    font-size: 17px;
+    margin: 0 3%;
+    width: 60px;
+  }
+
+  .head {
+    margin: 0 4.5%;
+  }
+
+  main {
+    text-align: center;
+  }
+
+  .latestcontainer {
+    margin: 0 auto;
+  }
+
+  .audiocontainer {
+    margin: 10px auto;
+  }
+
+  h1 {
+    font-size: 1.45rem;
+  }
+
+  .shows {
+    height: 200px;
+    padding: 5px 0 0 0;
+    margin: 0 0 10px 0;
+  }
+
+  .city {
+    grid-area: 3 / 1 / span 1 / span 1;
+  }
+
+  .note {
+    grid-area: 4 / 1 / span 1 / span 1;
+  }
+
+  .ticketbutton {
+    grid-area: 5 / 1 / span 1 / span 1;
+  }
+
+  a.ticket:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .contact {
+    grid-row-gap: 7px;
+  }
+
+  iframe {
+    width: 320px;
+    height: 180px;
+  }
+}
+
+/* screen width from 400 to 434 */
+@media screen and (min-width: 400px) and (max-width: 434px) {
+  body {
+    position: relative;
+    width: 90%;
+  }
+
+  a.headlink {
+    font-size: 18px;
+    margin: 0 4%;
+    width: 60px;
+  }
+
+  .head {
+    margin: 0 4.5%;
+  }
+
+  .latestcontainer {
+    margin: 0 auto;
+  }
+
+  .audiocontainer {
+    margin: 10px auto;
+  }
+
+  h1 {
+    font-size: 1.65rem;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .shows {
+    grid-template-columns: 1fr 100px;
+    margin: 0 0 5px 0;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+  }
+
+  .city {
+    grid-area: 3 / 1 / span 1 / span 1;
+  }
+
+  .note {
+    grid-area: 4 / 1 / span 1 / span 1;
+  }
+
+  .ticketbutton {
+    grid-area: 2 / 2 / span 3 / span 1;
+  }
+
+  a.ticket:link {
+    display: flex;
+  }
+
+  a.ticket:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .contact {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  .contacttype {
+    text-align: left;
+  }
+
+  .contactbox {
+    border-top: 1px solid gray;
+    padding: 5px 0 0 0;
+    text-align: left;
+  }
+
+  iframe {
+    width: 356px;
+    height: 200px;
+  }
+
+  .videocontainer {
+    text-align: center;
+  }
+}
+
+/* screen width from 435 to 624 */
+@media screen and (min-width: 435px) and (max-width: 624px) {
+  body {
+    position: relative;
+    width: 90%;
+  }
+
+  a.headlink {
+    font-size: 18px;
+    margin: 0 4%;
+    width: 60px;
+  }
+
+  .head {
+    margin: 0 4.5%;
+  }
+
+  h1 {
+    font-size: 1.65rem;
+  }
+
+  .shows {
+    grid-template-columns: 1fr 100px;
+    margin: 0 0 5px 0;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+  }
+
+  .city {
+    grid-area: 3 / 1 / span 1 / span 1;
+  }
+
+  .note {
+    grid-area: 4 / 1 / span 1 / span 1;
+  }
+
+  .ticketbutton {
+    grid-area: 2 / 2 / span 3 / span 1;
+  }
+
+  a.ticket:link {
+    display: flex;
+  }
+
+  a.ticket:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .contact {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  .contactbox {
+    border-top: 1px solid gray;
+    padding: 5px 0 0 0;
+  }
+
+  iframe {
+    width: 386px;
+    height: 217px;
+  }
+}
+
+/* screen width from 625 to 850 */
+@media screen and (min-width: 625px) and (max-width: 850px) {
+  body {
+    position: relative;
+    width: 90%;
+  }
+
+  a.headlink {
+    font-size: 18px;
+    margin: 0 4%;
+    width: 60px;
+  }
+
+  .head {
+    margin: 0 4.5%;
+  }
+
+  .shows {
+    grid-template-columns: 1fr 1fr 100px;
+    grid-template-rows: repeat(3, 1fr);
+    height: 90px;
+    grid-column-gap: 10px;
+  }
+
+  .city {
+    grid-area: 2 / 2 / span 1 / span 1;
+  }
+
+  .note {
+    grid-area: 3 / 1 / span 1 / span 2;
+  }
+
+  .ticketbutton {
+    grid-area: 2 / 3 / span 2 / span 1;
+  }
+
+  a.ticket:link {
+    display: flex;
+  }
+
+  .contact {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  .contactbox {
+    border-top: 1px solid gray;
+    padding: 5px 0 0 0;
+  }
+
+  iframe {
+    width: 560px;
+    height: 315px;
+  }
+}
+
+/* screen width from 851 to infinity */
+@media screen and (min-width: 851px) {
+  body {
+    width: 765px;
+  }
+
+  a.headlink {
+    font-size: 18px;
+    margin: 0 30px;
+    width: 80px;
+  }
+
+  .head {
+    margin: 0 38px;
+  }
+
+  .latestcontainer {
+    width: 56%;
+  }
+
+  .shows {
+    grid-template-columns: 1fr 1fr 100px;
+    grid-template-rows: repeat(3, 1fr);
+    height: 90px;
+    grid-column-gap: 10px;
+  }
+
+  .city {
+    grid-area: 2 / 2 / span 1 / span 1;
+  }
+
+  .note {
+    grid-area: 3 / 1 / span 1 / span 2;
+  }
+
+  .ticketbutton {
+    grid-area: 2 / 3 / span 2 / span 1;
+  }
+
+  a.ticket:link {
+    display: flex;
+  }
+
+  .contact {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  .contactbox {
+    border-top: 1px solid gray;
+    padding: 5px 0 0 0;
+  }
+
+  iframe {
+    width: 560px;
+    height: 315px;
+  }
+}
