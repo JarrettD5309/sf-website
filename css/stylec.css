@@ -1,14 +1,10 @@
 @font-face {
   font-family: "MarissaPaternoster";
-  src: url("../fonts/marissa-paternoster.woff") format("woff"),
-    url("../fonts/marissa-paternoster.woff2") format("woff2");
+  src: url("../fonts/marissa-paternoster.woff2") format("woff2"),
+    url("../fonts/marissa-paternoster.woff") format("woff"),
+    url("../fonts/marissa-paternoster.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-}
-
-@font-face {
-  font-family: "helvetica-neue-light";
-  src: url("../fonts/helvetica-neue-light.ttf") format("ttf");
 }
 
 body,
@@ -71,7 +67,7 @@ main {
   padding: 0 0 20px 0;
   position: relative;
   top: 65px;
-  font-family: helveticaneue-light, helvetica-neue-light, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.3px;
 }
 
