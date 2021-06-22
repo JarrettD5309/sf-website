@@ -120,6 +120,7 @@ a.headlink {
 .shows {
   display: grid;
   border-top: 1px solid gray;
+  padding: 5px 0 0 0;
 }
 
 .last {
@@ -232,7 +233,6 @@ iframe {
 
   .shows {
     height: 200px;
-    padding: 5px 0 0 0;
     margin: 0 0 10px 0;
   }
 
@@ -298,7 +298,6 @@ iframe {
 
   .shows {
     height: 200px;
-    padding: 5px 0 0 0;
     margin: 0 0 10px 0;
   }
 
