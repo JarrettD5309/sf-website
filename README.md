@@ -1,6 +1,6 @@
 # Screaming Females Website & Webstore
 <http://screamingfemales.com/> \
-Last Updated - Dec 28, 2021\
+Last Updated - Jan 24, 2022\
 By Jarrett Dougherty
 
 ## Wiki Description
